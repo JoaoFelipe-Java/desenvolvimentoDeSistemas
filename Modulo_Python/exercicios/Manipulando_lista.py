@@ -12,19 +12,19 @@ print(numeros)
 numeros.sort() #Função sort ordena uma lista em ordem crescente
 print(numeros)
 
-numeros.sort(reverse=True) 
+numeros.sort(reverse=True) #Usa a função '.sort' com parametro reverso
 print(numeros)
 
-# c)
-numeros.append(7)
-numeros.insert(2 , 3)
+numeros.append(7) # Add o número 7 na lista, sua posição será a ultima
 print(numeros)
 
-# d)
-numeros[1] = 10
+numeros.insert(1, 3)# Add 3 na lista, sua posição é a segunda, isso não apaga o valor da 2 posição joga ele para frente
 print(numeros)
 
-# e)
+numeros[0] = 10# substitui o valor da primeira posição por 10
+print(numeros)
+
+# deletando alguns dados
 del numeros[4]
 del numeros[3]
 del numeros[2]
