@@ -15,9 +15,7 @@ while True:
     telefone = input(f'Digite telefone do {nome}: ')
     print('"""""""""""""""""""""""""')
 
-    agenda.update({
-        nome : telefone
-        })
+    agenda.update({nome : telefone})
 
 print('Contatos salvos')
 for contato in agenda.items():
@@ -25,3 +23,4 @@ for contato in agenda.items():
     print(f'Telefone: {contato[1]}')
 
 #print('\n',list(agenda.items()))
+print(agenda)
