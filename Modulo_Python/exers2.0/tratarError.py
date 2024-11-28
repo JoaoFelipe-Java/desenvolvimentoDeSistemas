@@ -50,5 +50,8 @@ def aluno():
     except KeyError:
         print("Essa chave não existe.")
         print('Execute o programa novamente!')
-aluno()
+
+lista = [1,2,3,4,[10,11,12]]
+print(lista[4][0])
+
 
