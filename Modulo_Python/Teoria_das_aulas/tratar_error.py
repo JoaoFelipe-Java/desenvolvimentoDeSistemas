@@ -14,7 +14,7 @@ try:
 
     lista = [0,1,2,3,4]
     print(lista[3])
-    
+
     raise Exception
 
 except ZeroDivisionError as erro:
