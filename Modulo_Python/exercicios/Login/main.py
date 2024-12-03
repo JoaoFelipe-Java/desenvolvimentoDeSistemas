@@ -19,13 +19,15 @@ while True:
             else:
                 print('Senhas diferentes!')
                 raise Exception
+            dados_usuario.update({
+                        'nome': nome,
+                        'email': email,
+                        'senha': senha_final
+                     })
             with open('dados.json', 'w', encoding='UTF8') as leitura:
                 json.dump(
-                    dados_usuario.update({
-                                          'nome': nome,
-                                          'email': email,
-                                          'senha': senha_final
-                                          })
+                    dados_usuario,
+                    leitura
                 )
         else:
             print("Algo deu errado.")
@@ -35,4 +37,3 @@ while True:
         print(error)
     except ValueError:
         print('Error de valor, execute novamente e digite "cadastro" ou "login" ')
-
