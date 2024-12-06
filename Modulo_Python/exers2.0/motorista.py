@@ -3,7 +3,7 @@
 Crie um class motorista e um class carro, associe o carro ao motorista e possibilite que ele acelere 
 o carro e também acrescente algo ao porta malas
 """
-
+import os
 class Motorista:
     def __init__(self, nome, carro):
         self.Nome = nome
@@ -20,7 +20,7 @@ class carro:
     
     def adicionar_itens_malas(self, itens):
         self.malas = itens
-
+os.system('cls')
 nome_motorista = input('Digite seu nome: ')
 carro_motorista = input('Digite a marca do carro: ')
 velociade = int(input('Velocidade do carro: '))
