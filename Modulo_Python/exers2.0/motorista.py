@@ -26,9 +26,11 @@ carro_motorista = input('Digite a marca do carro: ')
 velociade = int(input('Velocidade do carro: '))
 quantidade_itens = int(input('Quantos itens vai adicionar ao porta malas? '))
 itens_mala = []
+
 for i in range(0, quantidade_itens):
     itens = input('O que vai colocar no porta malas: ')
     itens_mala.append(itens)
+
 motorista = Motorista(nome_motorista, carro_motorista)
 carro_motorista = carro(carro_motorista)
 carro_motorista.acelera_carro(velociade)
