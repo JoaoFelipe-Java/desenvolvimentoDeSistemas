@@ -9,18 +9,14 @@ class Produto:
         self.nome = nome
         self.preco = preco
 
-    def __str__(self):
-         return f"Produto(código={self.codigo}, nome={self.nome}, preço={self.preco})"
-
-
 class Estoque:
     def __init__(self):
         self.produtos = {}
 
     def adicionar_produto(self, produto):
-        self.produtos[produto.codigo] = produto
-        print(produto)
-        print(f"Produto {produto.nome} adicionado/atualizado com sucesso.")
+        self.produtos.update({produto.codigo: produto})
+        #self.produtos[produto.codigo] = produto
+        print(f"Produto {produto.nome} adicionado/atualizado com sucesso.\n")
 
     def remover_produto(self, codigo):
         if codigo in self.produtos:
@@ -47,3 +43,4 @@ estoque.listar_produtos()
 estoque.remover_produto(codigo='1')
 
 estoque.listar_produtos()
+ 

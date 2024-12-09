@@ -8,7 +8,7 @@ import json
 class Aluno:
     def __init__(self, nome):
         self.nome = nome 
-        self.notas  = []
+        self.notas = []
     
     def recebe_notas(self,nota):
         self.nota = nota
