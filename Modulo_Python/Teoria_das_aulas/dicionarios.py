@@ -36,13 +36,13 @@ print(usuario, type(usuario))
 # pop - APAGA UMA CHAVE ESPECÍFICA (del)
 # popitem - APAGA A ULTIMA CHAVE
 # update - ATUALIZA UM DICIONARIO
-print(len(usuario))
-print(list(usuario.keys()))
-print(list(usuario.values()))
-print(list(usuario.items()))
+# print(len(usuario))
+# print(list(usuario.keys()))
+# print(list(usuario.values()))
+# print(list(usuario.items()))
 
-usuario.setdefault('saldo', 0)
-print(usuario)
+# usuario.setdefault('saldo', 0)
+# print(usuario)
 
 print(usuario.get('nome'))
 
